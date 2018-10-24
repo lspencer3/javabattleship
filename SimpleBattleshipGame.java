@@ -13,11 +13,11 @@ public class SimpleBattleshipGame {
 		//int  n = rand.nextInt(4);
 		//4 is the maximum and zero is the minimum
 
-		Random rando = new Random();
+		//Random rando = new Random();
 
 		int randoNum = (int) (Math.random() * 5);
 
-		int[] cells = new int [4]
+		int[] cells = new int [4];
 
 		cells[0] = randoNum++;
 

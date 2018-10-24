@@ -1,8 +1,8 @@
-import java.io.;
+import java.io.*;
 
 public class GameHelper {
 
-	public String getUserInput(Sting prompt) {
+	public String getUserInput(String prompt) {
 		String inputLine = null;
 		System.out.print(prompt + " ");
 
@@ -17,7 +17,7 @@ public class GameHelper {
 
 		}
 		catch (IOException e)  {
-			System.out.printlin("IOException: " + e);
+			System.out.println("IOException: " + e);
 		}
 
 		return inputLine;

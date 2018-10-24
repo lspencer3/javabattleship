@@ -1,11 +1,11 @@
 public class SimpleBattleship {
 
 
-	int[] locationCells 
+	int[] locationCells; 
 
-	int numOfHits = 0
+	int numOfHits = 0;
 
-	String checkGuess(string guess) {
+	String checkGuess(String guess) {
 
 		String result = "miss";
 
@@ -15,11 +15,10 @@ public class SimpleBattleship {
 
 			if (usersGuess == cell) {
 
-				result = "hit"
+				result = "hit";
 
 				numOfHits++;
 
-				numOfGuesses++;
 				break;
 			} //end if statement per condition
 
@@ -27,7 +26,7 @@ public class SimpleBattleship {
 
 		if (numOfHits == locationCells.length) {
 
-			result = "sunk"
+			result = "sunk";
 		}
 		System.out.println(result);
 
