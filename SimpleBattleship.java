@@ -37,6 +37,8 @@ public class SimpleBattleship {
 	void setLocationCells(int[] loc) {
 
 		locationCells = loc;
+
+		System.out.println("this is supposed to be the loacation cells array ----> " + this.locationCells);
 	}
 
 }

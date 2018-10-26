@@ -17,19 +17,11 @@ public class SimpleBattleshipGame {
 
 		int randoNum = (int) (Math.random() * 5);
 
-		int[] cells = new int [4];
-
-		cells[0] = randoNum++;
-
-		cells[1] = randoNum + 2;
-
-		cells[2] = randoNum + 3;
+		int[] cells = {randoNum, randoNum + 1, randoNum + 2};
 
 		game.setLocationCells(cells);
 
-
 		boolean isAlive = true;
-
 
 		while (isAlive == true) {
 
