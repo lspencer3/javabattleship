@@ -1,4 +1,4 @@
-public class SimpleBattleshipTestScript {
+public class BattleshipTestScript {
 	public static void main (String[] args) {
 
 		SimpleBattleship ship = new SimpleBattleship();
