@@ -11,48 +11,65 @@ public class Battleship {
 
 	String result = "miss";
 
+	String shipName;
+
+	String assignName(String name) {
+
+		shipName = name;
+
+		return shipName;
+	}
+
 	String checkGuess(String guess) {
 
-		//int usersGuess = Integer.parseInt(guess);
+		if (locationCells.isEmpty()) {
 
-		int index = locationCells.indexOf(guess);
 
-		//for (int cell : locationCells) {
+			return result;
 
-		if (index >= 0) {
+		}
 
-			locationCells.remove(guess);
+		else {
 
-			numOfHits++;
+			//int usersGuess = Integer.parseInt(guess);
 
-			if (locationCells.isEmpty()) {
+			int index = locationCells.indexOf(guess);
 
-				result = "sunk";
+			//for (int cell : locationCells) {
 
-			}
+			if (index >= 0) {
+
+				locationCells.remove(guess);
+
+				numOfHits++;
+
+				if (locationCells.isEmpty()) {
+
+					result = "sunk";
+
+					System.out.println("You sunk " + this.shipName);
+
+				}
+
+				else {
+					result = "hit";
+
+					System.out.println("You hit " + this.shipName);
+
+				}
+
+			} //end if statement per condition
+
 
 			else {
-				result = "hit";
 
+				System.out.println("You missed " + this.shipName);
 			}
 
-		} //end if statement per condition
+			//System.out.println(result);
 
-		//}//end this foor loop 
-
-			//no longer need the below code to fix bug
-
-		/*if (numOfHits == originalLength) {
-
-			result = "sunk";
-		}
-		System.out.println(result);
-
-		return result;*/
-
-		System.out.println(result);
-
-		return result;
+			return result;
+	    }
 	}
 
 	void setLocationCells(String[] loc) {

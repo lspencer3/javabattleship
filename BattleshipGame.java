@@ -6,9 +6,15 @@ public class BattleshipGame {
 
 		Battleship ship1 = new Battleship();
 
+		ship1.assignName("The Fighter");
+
 		Battleship ship2 = new Battleship();
 
+		ship2.assignName("The Warrior");
+
 		Battleship ship3 = new Battleship();
+
+		ship3.assignName("The Triumphant");
 
 		GameHelper helper = new GameHelper();
 
@@ -72,15 +78,15 @@ public class BattleshipGame {
 
 			String curgamestate1 = ship1.checkGuess(currentGuess);
 
-			System.out.println(curgamestate1);
+			//System.out.println(curgamestate1);
 
 			String curgamestate2 = ship2.checkGuess(currentGuess);
 
-			System.out.println(curgamestate2);
+			//System.out.println(curgamestate2);
 
 			String curgamestate3 = ship3.checkGuess(currentGuess);
 
-			System.out.println(curgamestate1);
+			//System.out.println(curgamestate1);
 
 			numOfGuesses++;
 
