@@ -72,9 +72,15 @@ public class BattleshipGame {
 
 			String curgamestate1 = ship1.checkGuess(currentGuess);
 
+			System.out.println(curgamestate1);
+
 			String curgamestate2 = ship2.checkGuess(currentGuess);
 
+			System.out.println(curgamestate2);
+
 			String curgamestate3 = ship3.checkGuess(currentGuess);
+
+			System.out.println(curgamestate1);
 
 			numOfGuesses++;
 

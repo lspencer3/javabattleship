@@ -9,9 +9,9 @@ public class Battleship {
 
 	int numOfHits = 0;
 
-	String checkGuess(String guess) {
+	String result = "miss";
 
-		String result = "miss";
+	String checkGuess(String guess) {
 
 		//int usersGuess = Integer.parseInt(guess);
 
@@ -21,7 +21,7 @@ public class Battleship {
 
 		if (index >= 0) {
 
-			locationCells.remove(index);
+			locationCells.remove(guess);
 
 			numOfHits++;
 
@@ -61,7 +61,7 @@ public class Battleship {
 
 		for (String index : loc)  {
 
-			System.out.println(index);
+			//System.out.println(index);
 			locationCells.add(index);
 
 		}
