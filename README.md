@@ -5,7 +5,7 @@ This program has the user play a simple game of battleship versus the computer
 
 ## Getting Started
 
-Download files then compile and run java file "BattleshipGame.java " in terminal to start up application
+Download files then compile and run java file "BattleshipGame.java" in terminal to start up application
 
 The Terminal will prompt you with the instructions to play the game. Below is a summary of how it should go.
 
