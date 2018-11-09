@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Battleship {
+public class oldBattleship {
 
 
 	//int[] locationCells; no longer need this
@@ -21,8 +21,6 @@ public class Battleship {
 	}
 
 	String checkGuess(String guess) {
-
-		//start with checking if location cells have all been hit and ship is already sunk, then return, no need to check user guess against sunken ships
 
 		if (locationCells.isEmpty()) {
 
